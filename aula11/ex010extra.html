@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <input type="text" name="" id="nacionalidade">
+    <input type="button" value="Ver" onclick="calcular()">
+    <div id="resultado"></div>
+    <script>
+        function calcular(){
+            var input = window.document.getElementById('nacionalidade')
+            var nacionalidade = input.value;
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Sua nacionalidade é ${nacionalidade}</p>`
+            //res.textContent = `Sua nacionalidade é ${nacionalidade}`
+            if (nacionalidade  == 'Brasil'){
+                res.innerHTML += `<p>Voce é brasileiro meu chapa</p>`
+            } else if(nacionalidade != 'Brasil', 'brasil'){
+                res.innerHTML += `<p>Voce é estrangeiro lixoso</p>`
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
